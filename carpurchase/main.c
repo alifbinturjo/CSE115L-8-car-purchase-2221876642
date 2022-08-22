@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include"splash.h"
 
 int main()
 {
-    printf("Hello world!\n");
+    splash();
+
     return 0;
 }

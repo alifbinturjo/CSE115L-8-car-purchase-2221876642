@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1661204032 source:c:\users\user\documents\github\cse115l-8-car-purchase-2221876642\carpurchase\main.c
+	<stdio.h>
+	<stdlib.h>
+	"splash.h"
+
+1661204010 c:\users\user\documents\github\cse115l-8-car-purchase-2221876642\carpurchase\splash.h
+	<stdio.h>
+	<dos.h>
+
