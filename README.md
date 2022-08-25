@@ -2,27 +2,27 @@
 
 [comment]: <> (# CSE115L-8-car-purchase-2221876642)
 
-# Project name: 
-<h3> By 
+# Project name: Car Purchase System
+<h3> By Md. Alif Bin Turjo
 </h3>
 
-<p>Project Description:</p>
+<p>Project Description:</p> This project is basically a car purchase system with some additional features.
 
 
 Progress
-- [ ] Splash screen
-- [ ] Login
+- [x] Splash screen
+- [x] Login
 - [ ] Menu driven program                              
 - [ ] Database
 
 Topics that need to be covered:
-- [ ] Function
-- [ ] Condition
-- [ ] Loop
+- [x] Function
+- [x] Condition
+- [x] Loop
 - [ ] Nested loop
 - [ ] Pointer
-- [ ] Array
-- [ ] String
+- [x] Array
+- [x] String
 - [ ] Recursion
 - [ ] Structure
 - [ ] File
