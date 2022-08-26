@@ -12,7 +12,7 @@
 Progress
 - [x] Splash screen
 - [x] Login
-- [ ] Menu driven program                              
+- [x] Menu driven program                              
 - [ ] Database
 
 Topics that need to be covered:
