@@ -35,7 +35,11 @@ void login(void)
             printf("|______ |     | |       |       |______ |______ |______ |______ |     | |      |     \n");
             printf("______| |_____| |_____  |_____  |______ ______| ______| |       |_____| |_____ |_____");
             sleep(2);
+
+            system("cls");
+            menu();
             break;
+
         }
         else if((strcmp(username,"user")!=0 || strcmp(password,"pass")!=0) && i<2)
         {
