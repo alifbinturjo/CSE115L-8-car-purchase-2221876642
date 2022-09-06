@@ -22,7 +22,7 @@ void r8(int prc);
 void audilogo(void);
 void bmw(void);
 void m2(int prc);
-void m4(int prc);
+void m3(int prc);
 void m5(int prc);
 void x2(int prc);
 void x3(int prc);
@@ -32,10 +32,35 @@ void x6(int prc);
 void x7(int prc);
 void bmwlogo(void);
 void mbenz(void);
+void c180(int prc);
+void c200(int prc);
+void gls450(int prc);
+void gle450(int prc);
+void cla180(int prc);
+void cls350(int prc);
+void mbenzlogo(void);
 void rr(void);
+void rrauto(int prc);
+void rrvelar(int prc);
+void rrevoque(int prc);
+void rrsport(int prc);
+void rrlogo(void);
 void honda(void);
+void civic10(int prc);
+void civic11(int prc);
+void accord(int prc);
+void insight(int prc);
+void vezel(int prc);
+void hondalogo(void);
 void hyundai(void);
+void tucson(int prc);
+void elantra(int prc);
+void sonata(int prc);
+void hyundailogo(void);
 void mazda(void);
+void mx5(int prc);
+void axela(int prc);
+void mazdalogo(void);
 
 int main(void)
 {
@@ -623,16 +648,14 @@ void bmw(void)
     bmwlogo();
 
 printf("\t\t\t[1]\tBMW M2\n\n");
-printf("\t\t\t[2]\tBMW M4\n\n");
+printf("\t\t\t[2]\tBMW M3\n\n");
 printf("\t\t\t[3]\tBMW M5\n\n");
 printf("\t\t\t[4]\tBMW X2\n\n");
 printf("\t\t\t[5]\tBMW X3\n\n");
-printf("\t\t\t[6]\tBMW X4\n\n");
-printf("\t\t\t[7]\tBMW X5\n\n");
-printf("\t\t\t[8]\tBMW X6\n\n");
-printf("\t\t\t[9]\tBMW X7\n\n");
-printf("\t\t\t[10]\tBACK\n\n");
-printf("\t\t\t[11]\tBACK TO MENU\n\n");
+printf("\t\t\t[6]\tBMW X5\n\n");
+printf("\t\t\t[7]\tBMW X7\n\n");
+printf("\t\t\t[8]\tBACK\n\n");
+printf("\t\t\t[9]\tBACK TO MENU\n\n");
 
 int bmwopt,prc,optt;
 
@@ -665,7 +688,7 @@ switch(bmwopt)
     break;
     case 2:
     system("cls");
-    m4(prc);
+    m3(prc);
     o1:
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
@@ -681,7 +704,7 @@ switch(bmwopt)
         break;
     default:
         system("cls");
-        m4(prc);
+        m3(prc);
         goto o1;
         }
     break;
@@ -753,7 +776,7 @@ switch(bmwopt)
     break;
     case 6:
     system("cls");
-    x4(prc);
+    x5(prc);
     o5:
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
@@ -769,13 +792,13 @@ switch(bmwopt)
         break;
     default:
         system("cls");
-        x4(prc);
+        x5(prc);
         goto o5;
         }
     break;
     case 7:
     system("cls");
-    x5(prc);
+    x7(prc);
     o6:
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
@@ -791,59 +814,15 @@ switch(bmwopt)
         break;
     default:
         system("cls");
-        x5(prc);
+        x7(prc);
         goto o6;
         }
     break;
     case 8:
     system("cls");
-    x6(prc);
-    o7:
-    printf("\n\n\t\t\tENTER OPTION: ");
-    scanf("%d", &optt);
-    switch(optt)
-    {
-    case 2:
-        system("cls");
-        bmw();
-        break;
-    case 3:
-        system("cls");
-        menu();
-        break;
-    default:
-        system("cls");
-        x6(prc);
-        goto o7;
-        }
-    break;
-    case 9:
-    system("cls");
-    x7(prc);
-    o8:
-    printf("\n\n\t\t\tENTER OPTION: ");
-    scanf("%d", &optt);
-    switch(optt)
-    {
-    case 2:
-        system("cls");
-        bmw();
-        break;
-    case 3:
-        system("cls");
-        menu();
-        break;
-    default:
-        system("cls");
-        x7(prc);
-        goto o8;
-        }
-    break;
-    case 10:
-    system("cls");
     car_det();
      break;
-case 11:
+case 9:
     system("cls");
     menu();
      break;
@@ -873,43 +852,350 @@ printf("         .!YB&@@@@@@@&BY!.         \n\n\n");
 }
 void m2(int prc)
 {
-
+bmwlogo();
+    prc=5700000;
+    printf("\t\t\t[BMW M2]\n\n\n");
+    printf("\t\t\tENGINE: 3.0L TWIN-TURBO INLINE-6 GAS\n\n");
+    printf("\t\t\tMAX POWER: 420HP\n\n");
+    printf("\t\t\tTORQUE: 406LBFT@2350RPM\n\n");
+    printf("\t\t\tMILEAGE: 21MPG\n\n");
+    printf("\t\t\tBODY TYPE: COUPE\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
 }
-void m4(int prc)
+void m3(int prc)
 {
-
+bmwlogo();
+    prc=16200000;
+    printf("\t\t\t[BMW M3]\n\n\n");
+    printf("\t\t\tENGINE: 3.0L TWIN-TURBO INLINE-6 GAS\n\n");
+    printf("\t\t\tMAX POWER: 540HP\n\n");
+    printf("\t\t\tTORQUE: 479LBFT@2750RPM\n\n");
+    printf("\t\t\tMILEAGE: 20MPG\n\n");
+    printf("\t\t\tBODY TYPE: HATCHBACK\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
 }
 void m5(int prc)
 {
-
+bmwlogo();
+    prc=12000000;
+    printf("\t\t\t[BMW M2]\n\n\n");
+    printf("\t\t\tENGINE: 4.4L TWIN-TURBO V8 GAS\n\n");
+    printf("\t\t\tMAX POWER: 627HP@6000RPM\n\n");
+    printf("\t\t\tTORQUE: 553LBFT@1800RPM\n\n");
+    printf("\t\t\tMILEAGE: 18MPG\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
 }
 void x2(int prc)
 {
-
+bmwlogo();
+    prc=8500000;
+    printf("\t\t\t[BMW X2]\n\n\n");
+    printf("\t\t\tENGINE: 1998CC\n\n");
+    printf("\t\t\tMAX POWER: 228HP@5000RPM\n\n");
+    printf("\t\t\tTORQUE: 258LBFT@1450RPM\n\n");
+    printf("\t\t\tMILEAGE: 5.2-5.1LP100KM\n\n");
+    printf("\t\t\tTOP SPEED: 143MPH\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
 }
 void x3(int prc)
 {
-
-}
-void x4(int prc)
-{
-
+bmwlogo();
+    prc=13500000;
+    printf("\t\t\t[BMW X3]\n\n\n");
+    printf("\t\t\tENGINE: 1998CC\n\n");
+    printf("\t\t\tMAX POWER: 252HP@5200RPM\n\n");
+    printf("\t\t\tTORQUE: 300LBFT@4000RPM\n\n");
+    printf("\t\t\tMILEAGE: 8.2-8.1LP100KM\n\n");
+    printf("\t\t\tTOP SPEED: 215KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
 }
 void x5(int prc)
 {
-
-}
-void x6(int prc)
-{
-
+bmwlogo();
+    prc=19800000;
+    printf("\t\t\t[BMW X5]\n\n\n");
+    printf("\t\t\tENGINE: 2993CC\n\n");
+    printf("\t\t\tMAX POWER: 210HP@6000RPM\n\n");
+    printf("\t\t\tTORQUE: 450LBFT@3500RPM\n\n");
+    printf("\t\t\tMILEAGE: 2.5LP100KM\n\n");
+    printf("\t\t\tTOP SPEED: 235KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
 }
 void x7(int prc)
 {
-
+bmwlogo();
+    prc=25000000;
+    printf("\t\t\t[BMW X7]\n\n\n");
+    printf("\t\t\tENGINE: 2993CC\n\n");
+    printf("\t\t\tMAX POWER: 250HP@6500RPM\n\n");
+    printf("\t\t\tTORQUE: 450LBFT@5200RPM\n\n");
+    printf("\t\t\tMILEAGE: 9.5LP100KM\n\n");
+    printf("\t\t\tTOP SPEED: 245KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
 }
 void mbenz(void)
 {
     system("cls");
+    mbenzlogo();
+
+printf("\t\t\t[1]\tMERCEDES BENZ C180\n\n");
+printf("\t\t\t[2]\tMERCEDES BENZ C200\n\n");
+printf("\t\t\t[3]\tMERCEDES BENZ GLS450\n\n");
+printf("\t\t\t[4]\tMERCEDES BENZ GLE450\n\n");
+printf("\t\t\t[5]\tMERCEDES BENZ CLA180\n\n");
+printf("\t\t\t[6]\tMERCEDES BENZ CLS350\n\n");
+printf("\t\t\t[7]\tBACK\n\n");
+printf("\t\t\t[8]\tBACK TO MENU\n\n");
+
+int mbenzopt,prc,optt;
+
+printf("\n\n\t\t\tENTER OPTION: ");
+scanf("%d", &mbenzopt);
+
+switch(mbenzopt)
+{
+    case 1:
+    system("cls");
+    c180(prc);
+    o:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        mbenz();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        c180(prc);
+        goto o;
+        }
+    break;
+    case 2:
+    system("cls");
+    c200(prc);
+    o1:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        mbenz();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        c200(prc);
+        goto o1;
+        }
+    break;
+    case 3:
+    system("cls");
+    gls450(prc);
+    o2:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        mbenz();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        gls450(prc);
+        goto o2;
+        }
+    break;
+    case 4:
+    system("cls");
+    gle450(prc);
+    o3:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        mbenz();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        gle450(prc);
+        goto o3;
+        }
+    break;
+    case 5:
+    system("cls");
+    cla180(prc);
+    o4:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        mbenz();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        cla180(prc);
+        goto o4;
+        }
+    break;
+    case 6:
+    system("cls");
+    cls350(prc);
+    o5:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        mbenz();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        cls350(prc);
+        goto o5;
+        }
+    break;
+    case 7:
+    system("cls");
+    car_det();
+     break;
+case 8:
+    system("cls");
+    menu();
+     break;
+default:
+    system("cls");
+    mbenz();
+}
+}
+void c180(int prc)
+{
+   mbenzlogo();
+    prc=9000000;
+    printf("\t\t\t[MERCEDES BENZ C180]\n\n\n");
+    printf("\t\t\tENGINE: 1595CC\n\n");
+    printf("\t\t\tMAX POWER: 156BHP@5300RPM\n\n");
+    printf("\t\t\tTORQUE: 250NM@1200RPM\n\n");
+    printf("\t\t\tMILEAGE: 5.5-5.0LP100KM\n\n");
+    printf("\t\t\tTOP SPEED: 225KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void c200(int prc)
+{
+    mbenzlogo();
+    prc=9800000;
+    printf("\t\t\t[MERCEDES BENZ C200]\n\n\n");
+    printf("\t\t\tENGINE: 1991CC\n\n");
+    printf("\t\t\tMAX POWER: 135BHP@5500RPM\n\n");
+    printf("\t\t\tMILEAGE: 5.9-5.3LP100KM\n\n");
+    printf("\t\t\tTOP SPEED: 225KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void gls450(int prc)
+{
+    mbenzlogo();
+    prc=23000000;
+    printf("\t\t\t[MERCEDES BENZ GLS450]\n\n\n");
+    printf("\t\t\tENGINE: 2999CC\n\n");
+    printf("\t\t\tMAX POWER: 362HP@6100RPM\n\n");
+    printf("\t\t\tTORQUE: 369LBFT@4500RPM\n\n");
+    printf("\t\t\tMILEAGE: 22MPG\n\n");
+    printf("\t\t\tTOP SPEED: 246KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void gle450(int prc)
+{
+    mbenzlogo();
+    prc=19000000;
+    printf("\t\t\t[MERCEDES BENZ GLE450]\n\n\n");
+    printf("\t\t\tENGINE: 2999CC\n\n");
+    printf("\t\t\tMAX POWER: 362BHP@6100RPM\n\n");
+    printf("\t\t\tTORQUE: 369LBFT@4500RPM\n\n");
+    printf("\t\t\tMILEAGE: 11.11KMPL\n\n");
+    printf("\t\t\tTOP SPEED: 250KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void cla180(int prc)
+{
+  mbenzlogo();
+    prc=8200000;
+    printf("\t\t\t[MERCEDES BENZ CLA180]\n\n\n");
+    printf("\t\t\tENGINE: 1595CC\n\n");
+    printf("\t\t\tMAX POWER: 122HP@5000RPM\n\n");
+    printf("\t\t\tTORQUE: 200NM@4000RPM\n\n");
+    printf("\t\t\tMILEAGE: 5.6-5.2LP100KM\n\n");
+    printf("\t\t\tTOP SPEED: 210KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void cls350(int prc)
+{
+    mbenzlogo();
+    prc=18000000;
+    printf("\t\t\t[MERCEDES BENZ CLS350]\n\n\n");
+    printf("\t\t\tENGINE: 3498CC\n\n");
+    printf("\t\t\tMAX POWER: 306BHP@6500RPM\n\n");
+    printf("\t\t\tTORQUE: 370NM@5250RPM\n\n");
+    printf("\t\t\tMILEAGE: 9.26KMPL\n\n");
+    printf("\t\t\tTOP SPEED: 250KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void mbenzlogo(void)
+{
 printf("               .:^~~~~^:.               \n");
 printf("          .~Y#&@@@@@@@@@@&#5~.          \n");
 printf("       .7B@@@&BY7~^&&^~7YG&@@@#7.       \n");
@@ -929,23 +1215,182 @@ printf("     .Y@@@G!.              .~G@@@Y.     \n");
 printf("       .7#@@@&P?~^:..:^~?P&@@@#7.       \n");
 printf("          .~5#@@@@@@@@@@@@#5!.          \n");
 printf("               .:^~!!~^:.               \n\n\n");
-
-printf("\t\t\t[1]\tMERCEDES BENZ C180\n\n");
-printf("\t\t\t[2]\tMERCEDES BENZ C200\n\n");
-printf("\t\t\t[3]\tMERCEDES BENZ GLS450\n\n");
-printf("\t\t\t[4]\tMERCEDES BENZ GLE450\n\n");
-printf("\t\t\t[5]\tMERCEDES BENZ CLA180\n\n");
-printf("\t\t\t[6]\tMERCEDES BENZ CLS350\n\n");
-printf("\t\t\t[7]\tBACK TO MENU\n\n");
-
-int mbenzopt;
-
-printf("\n\n\t\t\tENTER OPTION: ");
-scanf("%d", &mbenzopt);
 }
 void rr(void)
 {
     system("cls");
+rrlogo();
+
+printf("\t\t\t[1]\tRANGE ROVER AUTOBIOGRAPHY\n\n");
+printf("\t\t\t[2]\tRANGE ROVER VELAR\n\n");
+printf("\t\t\t[3]\tRANGE ROVER EVOQUE\n\n");
+printf("\t\t\t[4]\tRANGE ROVER SPORT\n\n");
+printf("\t\t\t[5]\tBACK\n\n");
+printf("\t\t\t[6]\tBACK TO MENU\n\n");
+
+int rropt,prc,optt;
+
+printf("\n\n\t\t\tENTER OPTION: ");
+scanf("%d", &rropt);
+
+switch(rropt)
+{
+    case 1:
+    system("cls");
+    rrauto(prc);
+    o:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        rr();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        rrauto(prc);
+        goto o;
+        }
+    break;
+    case 2:
+    system("cls");
+    rrvelar(prc);
+    o1:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        rr();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        rrvelar(prc);
+        goto o1;
+        }
+    break;
+    case 3:
+    system("cls");
+    rrevoque(prc);
+    o2:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        rr();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        rrevoque(prc);
+        goto o2;
+        }
+    break;
+    case 4:
+    system("cls");
+    rrsport(prc);
+    o3:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        rr();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        rrsport(prc);
+        goto o3;
+        }
+    break;
+    case 5:
+    system("cls");
+    car_det();
+     break;
+case 6:
+    system("cls");
+    menu();
+     break;
+default:
+    system("cls");
+    rr();
+}
+}
+void rrauto(int prc)
+{
+     rrlogo();
+    prc=14000000;
+    printf("\t\t\t[RANGE ROVER AUTOBIOGRAPHY]\n\n\n");
+    printf("\t\t\tENGINE: 5.0L SUPERCHARGED V8 GAS\n\n");
+    printf("\t\t\tMAX POWER: 518HP@6000RPM\n\n");
+    printf("\t\t\tTORQUE: 461LBFT@2500RPM\n\n");
+    printf("\t\t\tMILEAGE: 14MPG\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void rrvelar(int prc)
+{
+     rrlogo();
+    prc=6400000;
+    printf("\t\t\tRANGE ROVER VELAR]\n\n\n");
+    printf("\t\t\tENGINE: 3.0L TURBO INLINE-6 GAS\n\n");
+    printf("\t\t\tMAX POWER: 335HP@6500RPM\n\n");
+    printf("\t\t\tTORQUE: 354LBFT@1500RPM\n\n");
+    printf("\t\t\tMILEAGE: 23MPG\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void rrevoque(int prc)
+{
+    rrlogo();
+    prc=7200000;
+    printf("\t\t\t[RANGE ROVER EVOQUE]\n\n\n");
+    printf("\t\t\tENGINE: 2.0L TURBO INLINE-4 GAS\n\n");
+    printf("\t\t\tMAX POWER: 246HP@5500RPM\n\n");
+    printf("\t\t\tTORQUE: 269LBFT@1400RPM\n\n");
+    printf("\t\t\tMILEAGE: 24MPG\n\n");
+    printf("\t\t\tTOP SPEED: 213KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void rrsport(int prc)
+{
+     rrlogo();
+    prc=8600000;
+    printf("\t\t\t[RANGE ROVER SPORT]\n\n\n");
+    printf("\t\t\tENGINE: 3.0L TURBO INLINE-6 GAS\n\n");
+    printf("\t\t\tMAX POWER: 395HP@5500RPM\n\n");
+    printf("\t\t\tTORQUE: 406LBFT@2000RPM\n\n");
+    printf("\t\t\tMILEAGE: 22MPG\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void rrlogo(void)
+{
 printf(" .::^^::^^::::           ::::         ^^:::       .:^:    .:::^^:::^^:      :^^:::^^::^^^  \n");
 printf(" &@@&&&&&&&&@@#:       .P@@@@G.       &@@@@#?.    J@@G   .&@@&&&&&&&&@&!   :@@@&&&&&&&&&&: \n");
 printf(".&@@?!~~!!~~B@@P      ~&@@J:B@&7      &@@7Y&@@G~. ?@@G   7@@5 .^!~~!7GBY   .@@@YJYYYJJY7.  \n");
@@ -959,21 +1404,152 @@ printf(".&@@PYYYY5YJ#@@5   !@@#        :@@#    .G@@P.  ^#@@G.    .&@@BGGGGGGB5  
 printf(" &@@GPPPPP&@@@!    ~@@&. ......!@@#      7&@&~J@@&7       &@@PJJYYYJJ?.    :@@@GPPPPG@@@&! \n");
 printf(".&@@.     .J&@#~   .#@@&&&&&&&&@@@5       .G@@@@G.       .&@@&&&&&&&&&@^   .@@&      .5@@B:\n");
 printf(" :^:        .:::     :^::^^^::^^:.          :^^:          .:^^:::^^::^^.    :::        .:^^\n\n\n");
-
-printf("\t\t\t[1]\tRANGE ROVER AUTOBIOGRAPHY\n\n");
-printf("\t\t\t[2]\tRANGE ROVER VELAR\n\n");
-printf("\t\t\t[3]\tRANGE ROVER EVOQUE\n\n");
-printf("\t\t\t[4]\tRANGE ROVER SPORT\n\n");
-printf("\t\t\t[5]\tBACK TO MENU\n\n");
-
-int rropt;
-
-printf("\n\n\t\t\tENTER OPTION: ");
-scanf("%d", &rropt);
 }
 void honda(void)
 {
     system("cls");
+hondalogo();
+
+printf("\t\t\t[1]\tHONDA CIVIC 10TH GEN\n\n");
+printf("\t\t\t[2]\tHONDA CIVIC 11TH GEN\n\n");
+printf("\t\t\t[3]\tHONDA ACCORD\n\n");
+printf("\t\t\t[4]\tHONDA INSIGHT\n\n");
+printf("\t\t\t[5]\tHONDA VEZEL\n\n");
+printf("\t\t\t[6]\tBACK\n\n");
+printf("\t\t\t[7]\tBACK TO MENU\n\n");
+
+int hondaopt,prc,optt;
+
+printf("\n\n\t\t\tENTER OPTION: ");
+scanf("%d", &hondaopt);
+
+switch(hondaopt)
+{
+    case 1:
+    system("cls");
+    civic10(prc);
+    o:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        honda();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        civic10(prc);
+        goto o;
+        }
+    break;
+    case 2:
+    system("cls");
+    civic11(prc);
+    o1:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        honda();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        civic11(prc);
+        goto o1;
+        }
+    break;
+    case 3:
+    system("cls");
+    accord(prc);
+    o2:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        honda();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        accord(prc);
+        goto o2;
+        }
+    break;
+    case 4:
+    system("cls");
+    insight(prc);
+    o3:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        honda();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        insight(prc);
+        goto o3;
+        }
+    break;
+    case 5:
+    system("cls");
+    vezel(prc);
+    o4:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        honda();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        vezel(prc);
+        goto o4;
+        }
+    break;
+    case 6:
+    system("cls");
+    car_det();
+     break;
+case 7:
+    system("cls");
+    menu();
+     break;
+default:
+    system("cls");
+    honda();
+}
+}
+void hondalogo(void)
+{
 printf("         ....::::::^^:::::....          \n");
 printf("   ~YPPPP5YJ???77!!!!!!!77??JY55PPPY^   \n");
 printf(" 7@&7.  B&#                  #&B  .7&@! \n");
@@ -991,22 +1567,173 @@ printf(" ^@#     !@@@@#          B@@@@7     &@. \n");
 printf("  ~@&?.  .@@@@:          .@@@@.  :J@&:  \n");
 printf("    ^YGGP5PPP5??777!!777??5PPP5PGGJ:    \n");
 printf("         ....:::^^^^^^^^::.....         \n\n\n");
-
-printf("\t\t\t[1]\tHONDA CIVIC 10TH GEN\n\n");
-printf("\t\t\t[2]\tHONDA CIVIC 11TH GEN\n\n");
-printf("\t\t\t[3]\tHONDA ACCORD\n\n");
-printf("\t\t\t[4]\tHONDA INSIGHT\n\n");
-printf("\t\t\t[5]\tHONDA VEZEL\n\n");
-printf("\t\t\t[6]\tBACK TO MENU\n\n");
-
-int hondaopt;
-
-printf("\n\n\t\t\tENTER OPTION: ");
-scanf("%d", &hondaopt);
+}
+void civic10(int prc)
+{
+    hondalogo();
+    prc=4000000;
+    printf("\t\t\t[HONDA COVIC 10TH GEN]\n\n\n");
+    printf("\t\t\tENGINE: 1498CC\n\n");
+    printf("\t\t\tMAX POWER: 173PS@5500RPM\n\n");
+    printf("\t\t\tTORQUE: 220NM@5500RPM\n\n");
+    printf("\t\t\tMILEAGE: 17.8-24.1KMPL\n\n");
+    printf("\t\t\tTOP SPEED: 200KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void civic11(int prc)
+{
+    hondalogo();
+    prc=4600000;
+    printf("\t\t\t[HONDA CIVIC 11TH GEN]\n\n\n");
+    printf("\t\t\tENGINE: 2.0L INLINE-4 GAS\n\n");
+    printf("\t\t\tMAX POWER: 158HP@6500RPM\n\n");
+    printf("\t\t\tTORQUE: 138LBFT@4200RPM\n\n");
+    printf("\t\t\tMILEAGE: 34KMPL\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void accord(int prc)
+{
+    hondalogo();
+    prc=5500000;
+    printf("\t\t\t[HONDA ACCORD]\n\n\n");
+    printf("\t\t\tENGINE: 1498CC\n\n");
+    printf("\t\t\tMAX POWER: 192HP@5500RPM\n\n");
+    printf("\t\t\tTORQUE: 260NM@5000RPM\n\n");
+    printf("\t\t\tTOP SPEED: 190KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void insight(int prc)
+{
+    hondalogo();
+    prc=4200000;
+    printf("\t\t\t[HONDA INSIGHT]\n\n\n");
+    printf("\t\t\tENGINE: 1.5L INLINE-4 HYBRID\n\n");
+    printf("\t\t\tMAX POWER: 151HP@6000RPM\n\n");
+    printf("\t\t\tTORQUE: 99LBFT@5000RPM\n\n");
+    printf("\t\t\tMILEAGE: 28KML\n\n");
+    printf("\t\t\tTOP SPEED: 210KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void vezel(int prc)
+{
+    hondalogo();
+    prc=2500000;
+    printf("\t\t\t[HONDA VEZEL]\n\n\n");
+    printf("\t\t\tENGINE: 1.8L INLINE-4 GAS\n\n");
+    printf("\t\t\tMAX POWER: 141HP@6500RPM\n\n");
+    printf("\t\t\tTORQUE: 127LBFT@43000RPM\n\n");
+    printf("\t\t\tMILEAGE: 31KMPL\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
 }
 void hyundai(void)
 {
     system("cls");
+    hyundailogo();
+
+printf("\t\t\t[1]\tHYUNDAI TUCSON\n\n");
+printf("\t\t\t[2]\tHYUNDAI ELANTRA\n\n");
+printf("\t\t\t[3]\tHYUNDAI SONATA\n\n");
+printf("\t\t\t[4]\tBACK\n\n");
+printf("\t\t\t[5]\tBACK TO MENU\n\n");
+
+int hyundaiopt,prc,optt;
+
+printf("\n\n\t\t\tENTER OPTION: ");
+scanf("%d", &hyundaiopt);
+
+switch(hyundaiopt)
+{
+    case 1:
+    system("cls");
+    tucson(prc);
+    o:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        hyundai();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        tucson(prc);
+        goto o;
+        }
+    break;
+    case 2:
+    system("cls");
+    elantra(prc);
+    o1:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        hyundai();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        elantra(prc);
+        goto o1;
+        }
+    break;
+    case 3:
+    system("cls");
+    sonata(prc);
+    o2:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        hyundai();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        sonata(prc);
+        goto o2;
+        }
+    break;
+    case 4:
+    system("cls");
+    car_det();
+     break;
+case 5:
+    system("cls");
+    menu();
+     break;
+default:
+    system("cls");
+    hyundai();
+}
+}
+void hyundailogo(void)
+{
 printf("                    ....                     \n");
 printf("          .:!JPB#&&@@@@@@@&&#BPJ!:.          \n");
 printf("      .~P&@@@&G&@@@P::^^^^~7J5G#@@@#5~.      \n");
@@ -1020,20 +1747,124 @@ printf("    ?&@@#@@@&Y:           ?@@@@!  :?B@@&?    \n");
 printf("      :J#@@@#Y7~^...     :@@@@BP&@@@#J:      \n");
 printf("          .~JG#&&&&&&&&&&@@@&&#GY!:          \n");
 printf("                 ..::::::...                 \n\n\n");
-
-printf("\t\t\t[1]\tHYUNDAI TUCSON\n\n");
-printf("\t\t\t[2]\tHYUNDAI ELANTRA\n\n");
-printf("\t\t\t[3]\tHYUNDAI SONATA\n\n");
-printf("\t\t\t[4]\tBACK TO MENU\n\n");
-
-int hyundaiopt;
-
-printf("\n\n\t\t\tENTER OPTION: ");
-scanf("%d", &hyundaiopt);
+}
+void tucson(int prc)
+{
+    hyundailogo();
+    prc=5300000;
+    printf("\t\t\t[HYUNDAI TUCSON]\n\n\n");
+    printf("\t\t\tENGINE: 1999CC\n\n");
+    printf("\t\t\tMAX POWER: 155PS@6200RPM\n\n");
+    printf("\t\t\tTORQUE: 19.6@4000RPM\n\n");
+    printf("\t\t\tMILEAGE: 15.38KMPL\n\n");
+    printf("\t\t\tTOP SPEED: 201.16KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SUV\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void elantra(int prc)
+{
+    hyundailogo();
+    prc=3600000;
+    printf("\t\t\t[HYUNDAI ELANTRA]\n\n\n");
+    printf("\t\t\tENGINE: 1591CC\n\n");
+    printf("\t\t\tMAX POWER: 130PS@6300RPM\n\n");
+    printf("\t\t\tTORQUE: 15.7@4850RPM\n\n");
+    printf("\t\t\tTOP SPEED: 210KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void sonata(int prc)
+{
+    hyundailogo();
+    prc=5600000;
+    printf("\t\t\t[HYUNDAI SONATA]\n\n\n");
+    printf("\t\t\tENGINE: 1999CC\n\n");
+    printf("\t\t\tMAX POWER: 152HP@6200RPM\n\n");
+    printf("\t\t\tTORQUE: 19.6@4000RPM\n\n");
+    printf("\t\t\tTOP SPEED: 209.21KMPH\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
 }
 void mazda(void)
 {
     system("cls");
+    mazdalogo();
+
+
+printf("\t\t\t[1]\tMAZDA MX5\n\n");
+printf("\t\t\t[2]\tMAZDA AXELA\n\n");
+printf("\t\t\t[3]\tBACK\n\n");
+printf("\t\t\t[4]\tBACK TO MENU\n\n");
+
+int mazdaopt,prc,optt;
+
+printf("\n\n\t\t\tENTER OPTION: ");
+scanf("%d", &mazdaopt);
+
+switch(mazdaopt)
+{
+    case 1:
+    system("cls");
+    mx5(prc);
+    o:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        mazda();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        mx5(prc);
+        goto o;
+        }
+    break;
+    case 2:
+    system("cls");
+    axela(prc);
+    o1:
+    printf("\n\n\t\t\tENTER OPTION: ");
+    scanf("%d", &optt);
+    switch(optt)
+    {
+    case 2:
+        system("cls");
+        mazda();
+        break;
+    case 3:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        axela(prc);
+        goto o1;
+        }
+    break;
+    case 4:
+    system("cls");
+    car_det();
+     break;
+case 5:
+    system("cls");
+    menu();
+     break;
+default:
+    system("cls");
+    mazda();
+}
+}
+void mazdalogo(void)
+{
 printf("           .^!7?JY5555YYJ7!^.           \n");
 printf("      .~5#@@@&#GP5YJJJY5G#&@@@#5!.      \n");
 printf("    .P@@@@P~.              .^5@@@@P.    \n");
@@ -1049,19 +1880,36 @@ printf("   ~&@@@J.                    .J@@@&~   \n");
 printf("     ?&@@@G!:             .:7G@@@&?     \n");
 printf("       :?G&@@@&&#BBBBBB#&&@@@&G7:       \n");
 printf("           .:^!7JYY555YJ7~^.            \n");
-
-printf("\t\t\t[1]\tMAZDA MX5\n\n");
-printf("\t\t\t[2]\tMAZDA AXELA\n\n");
-printf("\t\t\t[3]\tBACK TO MENU\n\n");
-
-int mazdaopt;
-
-printf("\n\n\t\t\tENTER OPTION: ");
-scanf("%d", &mazdaopt);
+}
+void mx5(int prc)
+{
+   mazdalogo();
+    prc=3200000;
+    printf("\t\t\tMAZDA MX5]\n\n\n");
+    printf("\t\t\tENGINE: 1998CC\n\n");
+    printf("\t\t\tMAX POWER: 181HP@7000RPM\n\n");
+    printf("\t\t\tTORQUE: 151NM@4000RPM\n\n");
+    printf("\t\t\tMILEAGE: 30KMPL\n\n");
+    printf("\t\t\tBODY TYPE: CONVERTIBLE 2 SEATER\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
+}
+void axela(int prc)
+{
+    mazdalogo();
+    prc=2400000;
+    printf("\t\t\tMAZDA AXELA]\n\n\n");
+    printf("\t\t\tENGINE: 1498CC\n\n");
+    printf("\t\t\tMAX POWER: 103BHP\n\n");
+    printf("\t\t\tTORQUE: 270NM\n\n");
+    printf("\t\t\tMILEAGE: 21.6KML\n\n");
+    printf("\t\t\tBODY TYPE: SEDAN\n\n");
+    printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
+    downmenu();
 }
 void downmenu(void)
 {
     printf("\t\t\t[1]\tPURCHASE\n\n");
     printf("\t\t\t[2]\tBACK\n\n");
-    printf("\t\t\t[3]\tBACK TO MENU\n\n");
+    printf("\t\t\t[3]\tBACK TO MENU\n");
 }
