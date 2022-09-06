@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<dos.h>
 #include"splash.h"
 #include"login.h"
 #include"menu.h"
@@ -61,6 +62,7 @@ void mazda(void);
 void mx5(int prc);
 void axela(int prc);
 void mazdalogo(void);
+void purchase(int prc);
 
 int main(void)
 {
@@ -154,10 +156,15 @@ case 1:
     system("cls");
     a3(prc);
     o:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+    case 1:
+        prc=5000000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -176,10 +183,15 @@ case 2:
     system("cls");
     a4(prc);
     o1:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=7500000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -198,10 +210,15 @@ case 3:
     system("cls");
     a5(prc);
     o2:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=9500000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -220,10 +237,15 @@ case 4:
     system("cls");
     a6(prc);
     o3:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=10600000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -242,10 +264,15 @@ case 5:
     system("cls");
     a8(prc);
     o4:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=21000000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -264,10 +291,15 @@ case 6:
     system("cls");
     rs3(prc);
     o5:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=5600000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -286,10 +318,15 @@ case 7:
     system("cls");
     rs6(prc);
     o6:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=11300000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -308,10 +345,15 @@ case 8:
     system("cls");
     q2(prc);
     o7:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=6600000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -330,10 +372,15 @@ case 9:
     system("cls");
     q3(prc);
     o8:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=7500000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -352,10 +399,15 @@ case 10:
     system("cls");
     q5(prc);
     o9:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=12500000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -374,10 +426,15 @@ case 11:
     system("cls");
     q7(prc);
     o10:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=15800000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -396,10 +453,15 @@ case 12:
     system("cls");
     q8(prc);
     o11:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=19900000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -418,10 +480,15 @@ case 13:
     system("cls");
     r8(prc);
     o12:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=19900000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         audi();
@@ -461,7 +528,7 @@ void a3(int prc)
     printf("\t\t\tTOP SPEED: 250KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void a4(int prc)
 {
@@ -475,7 +542,7 @@ void a4(int prc)
     printf("\t\t\tTOP SPEED: 250KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-    downmenu();
+
 }
 void a5(int prc)
 {
@@ -489,7 +556,7 @@ void a5(int prc)
     printf("\t\t\tTOP SPEED: 235KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-     downmenu();
+
 }
 void a6(int prc)
 {
@@ -503,7 +570,7 @@ void a6(int prc)
     printf("\t\t\tTOP SPEED: 155KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-     downmenu();
+
 }
 void a8(int prc)
 {
@@ -517,7 +584,7 @@ void a8(int prc)
     printf("\t\t\tTOP SPEED: 250KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-     downmenu();
+
 }
 void rs3(int prc)
 {
@@ -530,7 +597,7 @@ void rs3(int prc)
     printf("\t\t\tMILEAGE: 23MPG\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-     downmenu();
+
 }
 void rs6(int prc)
 {
@@ -543,7 +610,7 @@ void rs6(int prc)
     printf("\t\t\tMILEAGE: 18MPG\n\n");
     printf("\t\t\tBODY TYPE: WAGON\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-     downmenu();
+
 }
 void q2(int prc)
 {
@@ -557,7 +624,7 @@ void q2(int prc)
     printf("\t\t\tTOP SPEED: 197KMPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-     downmenu();
+
 }
 void q3(int prc)
 {
@@ -571,7 +638,7 @@ void q3(int prc)
     printf("\t\t\tTOP SPEED: 137MPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-     downmenu();
+
 }
 void q5(int prc)
 {
@@ -585,7 +652,7 @@ void q5(int prc)
     printf("\t\t\tTOP SPEED: 237MPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-     downmenu();
+
 }
 void q7(int prc)
 {
@@ -599,7 +666,7 @@ void q7(int prc)
     printf("\t\t\tTOP SPEED: 215KMPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-     downmenu();
+
 }
 void q8(int prc)
 {
@@ -613,7 +680,7 @@ void q8(int prc)
     printf("\t\t\tTOP SPEED: 250KMPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-     downmenu();
+
 }
 void r8(int prc)
 {
@@ -626,7 +693,7 @@ void r8(int prc)
     printf("\t\t\tMILEAGE: 16MPG\n\n");
     printf("\t\t\tBODY TYPE: COUPE\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n",prc);
-     downmenu();
+
 }
 
 void audilogo(void)
@@ -668,10 +735,15 @@ switch(bmwopt)
     system("cls");
     m2(prc);
     o:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=5700000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         bmw();
@@ -690,10 +762,15 @@ switch(bmwopt)
     system("cls");
     m3(prc);
     o1:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=16200000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         bmw();
@@ -712,10 +789,15 @@ switch(bmwopt)
     system("cls");
     m5(prc);
     o2:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=12000000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         bmw();
@@ -734,10 +816,15 @@ switch(bmwopt)
     system("cls");
     x2(prc);
     o3:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=8500000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         bmw();
@@ -756,10 +843,15 @@ switch(bmwopt)
     system("cls");
     x3(prc);
     o4:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=13500000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         bmw();
@@ -778,10 +870,15 @@ switch(bmwopt)
     system("cls");
     x5(prc);
     o5:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=19800000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         bmw();
@@ -800,10 +897,15 @@ switch(bmwopt)
     system("cls");
     x7(prc);
     o6:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=25000000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         bmw();
@@ -861,7 +963,7 @@ bmwlogo();
     printf("\t\t\tMILEAGE: 21MPG\n\n");
     printf("\t\t\tBODY TYPE: COUPE\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void m3(int prc)
 {
@@ -874,7 +976,7 @@ bmwlogo();
     printf("\t\t\tMILEAGE: 20MPG\n\n");
     printf("\t\t\tBODY TYPE: HATCHBACK\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void m5(int prc)
 {
@@ -887,7 +989,7 @@ bmwlogo();
     printf("\t\t\tMILEAGE: 18MPG\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void x2(int prc)
 {
@@ -901,7 +1003,7 @@ bmwlogo();
     printf("\t\t\tTOP SPEED: 143MPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void x3(int prc)
 {
@@ -915,7 +1017,7 @@ bmwlogo();
     printf("\t\t\tTOP SPEED: 215KMPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void x5(int prc)
 {
@@ -929,7 +1031,7 @@ bmwlogo();
     printf("\t\t\tTOP SPEED: 235KMPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void x7(int prc)
 {
@@ -943,7 +1045,7 @@ bmwlogo();
     printf("\t\t\tTOP SPEED: 245KMPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void mbenz(void)
 {
@@ -970,10 +1072,15 @@ switch(mbenzopt)
     system("cls");
     c180(prc);
     o:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=9000000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         mbenz();
@@ -992,10 +1099,15 @@ switch(mbenzopt)
     system("cls");
     c200(prc);
     o1:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=9800000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         mbenz();
@@ -1014,10 +1126,15 @@ switch(mbenzopt)
     system("cls");
     gls450(prc);
     o2:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=23000000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         mbenz();
@@ -1036,10 +1153,15 @@ switch(mbenzopt)
     system("cls");
     gle450(prc);
     o3:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=19000000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         mbenz();
@@ -1058,10 +1180,15 @@ switch(mbenzopt)
     system("cls");
     cla180(prc);
     o4:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=8200000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         mbenz();
@@ -1080,10 +1207,15 @@ switch(mbenzopt)
     system("cls");
     cls350(prc);
     o5:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=18000000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         mbenz();
@@ -1123,7 +1255,7 @@ void c180(int prc)
     printf("\t\t\tTOP SPEED: 225KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void c200(int prc)
 {
@@ -1136,7 +1268,7 @@ void c200(int prc)
     printf("\t\t\tTOP SPEED: 225KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void gls450(int prc)
 {
@@ -1150,7 +1282,7 @@ void gls450(int prc)
     printf("\t\t\tTOP SPEED: 246KMPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void gle450(int prc)
 {
@@ -1164,7 +1296,7 @@ void gle450(int prc)
     printf("\t\t\tTOP SPEED: 250KMPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void cla180(int prc)
 {
@@ -1178,7 +1310,7 @@ void cla180(int prc)
     printf("\t\t\tTOP SPEED: 210KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void cls350(int prc)
 {
@@ -1192,7 +1324,7 @@ void cls350(int prc)
     printf("\t\t\tTOP SPEED: 250KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void mbenzlogo(void)
 {
@@ -1239,10 +1371,15 @@ switch(rropt)
     system("cls");
     rrauto(prc);
     o:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=14000000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         rr();
@@ -1261,10 +1398,15 @@ switch(rropt)
     system("cls");
     rrvelar(prc);
     o1:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=6400000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         rr();
@@ -1283,10 +1425,15 @@ switch(rropt)
     system("cls");
     rrevoque(prc);
     o2:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=7200000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         rr();
@@ -1305,10 +1452,15 @@ switch(rropt)
     system("cls");
     rrsport(prc);
     o3:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=8600000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         rr();
@@ -1347,7 +1499,7 @@ void rrauto(int prc)
     printf("\t\t\tMILEAGE: 14MPG\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void rrvelar(int prc)
 {
@@ -1360,7 +1512,7 @@ void rrvelar(int prc)
     printf("\t\t\tMILEAGE: 23MPG\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void rrevoque(int prc)
 {
@@ -1374,7 +1526,7 @@ void rrevoque(int prc)
     printf("\t\t\tTOP SPEED: 213KMPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void rrsport(int prc)
 {
@@ -1387,7 +1539,7 @@ void rrsport(int prc)
     printf("\t\t\tMILEAGE: 22MPG\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void rrlogo(void)
 {
@@ -1429,10 +1581,15 @@ switch(hondaopt)
     system("cls");
     civic10(prc);
     o:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=4000000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         honda();
@@ -1451,10 +1608,15 @@ switch(hondaopt)
     system("cls");
     civic11(prc);
     o1:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=4600000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         honda();
@@ -1473,10 +1635,15 @@ switch(hondaopt)
     system("cls");
     accord(prc);
     o2:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=5500000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         honda();
@@ -1495,10 +1662,15 @@ switch(hondaopt)
     system("cls");
     insight(prc);
     o3:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=4200000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         honda();
@@ -1517,10 +1689,15 @@ switch(hondaopt)
     system("cls");
     vezel(prc);
     o4:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=2500000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         honda();
@@ -1580,7 +1757,7 @@ void civic10(int prc)
     printf("\t\t\tTOP SPEED: 200KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void civic11(int prc)
 {
@@ -1593,7 +1770,7 @@ void civic11(int prc)
     printf("\t\t\tMILEAGE: 34KMPL\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void accord(int prc)
 {
@@ -1606,7 +1783,7 @@ void accord(int prc)
     printf("\t\t\tTOP SPEED: 190KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void insight(int prc)
 {
@@ -1620,7 +1797,7 @@ void insight(int prc)
     printf("\t\t\tTOP SPEED: 210KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void vezel(int prc)
 {
@@ -1633,7 +1810,7 @@ void vezel(int prc)
     printf("\t\t\tMILEAGE: 31KMPL\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void hyundai(void)
 {
@@ -1657,10 +1834,15 @@ switch(hyundaiopt)
     system("cls");
     tucson(prc);
     o:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=5300000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         hyundai();
@@ -1679,10 +1861,15 @@ switch(hyundaiopt)
     system("cls");
     elantra(prc);
     o1:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=3600000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         hyundai();
@@ -1701,10 +1888,15 @@ switch(hyundaiopt)
     system("cls");
     sonata(prc);
     o2:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=5600000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         hyundai();
@@ -1760,7 +1952,7 @@ void tucson(int prc)
     printf("\t\t\tTOP SPEED: 201.16KMPH\n\n");
     printf("\t\t\tBODY TYPE: SUV\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void elantra(int prc)
 {
@@ -1773,7 +1965,7 @@ void elantra(int prc)
     printf("\t\t\tTOP SPEED: 210KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void sonata(int prc)
 {
@@ -1786,7 +1978,7 @@ void sonata(int prc)
     printf("\t\t\tTOP SPEED: 209.21KMPH\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void mazda(void)
 {
@@ -1810,10 +2002,15 @@ switch(mazdaopt)
     system("cls");
     mx5(prc);
     o:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=3200000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         mazda();
@@ -1832,10 +2029,15 @@ switch(mazdaopt)
     system("cls");
     axela(prc);
     o1:
+        downmenu();
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
     {
+        case 1:
+        prc=2400000;
+        purchase(prc);
+        break;
     case 2:
         system("cls");
         mazda();
@@ -1892,7 +2094,7 @@ void mx5(int prc)
     printf("\t\t\tMILEAGE: 30KMPL\n\n");
     printf("\t\t\tBODY TYPE: CONVERTIBLE 2 SEATER\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void axela(int prc)
 {
@@ -1905,11 +2107,88 @@ void axela(int prc)
     printf("\t\t\tMILEAGE: 21.6KML\n\n");
     printf("\t\t\tBODY TYPE: SEDAN\n\n");
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
-    downmenu();
+
 }
 void downmenu(void)
 {
     printf("\t\t\t[1]\tPURCHASE\n\n");
     printf("\t\t\t[2]\tBACK\n\n");
     printf("\t\t\t[3]\tBACK TO MENU\n");
+}
+void purchase(int prc)
+{
+system("cls");
+    int i=0;
+    while(i<3)
+    {
+    printf("_______  _____  _     _  ______      ______ _____ __   _  ______     _______ _______  ______ _______\n");
+    printf("|______ |     | |     | |_____/     |_____/   |   | \\  | |  ____     |       |_____| |_____/ |______\n");
+    printf("|       |_____| |_____| |    \\_     |    \\_ __|__ |  \\_| |_____|     |_____  |     | |    \\_ ______|\n");
+    printf(" _____  _______ __   __ _______ _______ __   _ _______\n");
+    printf("|_____] |_____|   \\_/   |  |  | |______ | \\  |    |   \n");
+    printf("|       |     |    |    |  |  | |______ |  \\_|    |   \n\n\n\n\n");
+
+    int paid;
+
+    printf("\t\t\tAMOUNT TO BE PAID: BDT%d", prc);
+    printf("\n\n\n\t\t\tENTER PAYMENT: BDT");
+    scanf("%d", &paid);
+
+    if(paid==prc)
+    {
+        system("cls");
+        printf("_______  _____  __   _  ______  ______ _______ _______ _     _        _______ _______ _____  _____  __   _ _______\n");
+        printf("|       |     | | \\  | |  ____ |_____/ |_____|    |    |     | |      |_____|    |      |   |     | | \\  | |______\n");
+        printf("|_____  |_____| |  \\_| |_____| |    \\_ |     |    |    |_____| |_____ |     |    |    __|__ |_____| |  \\_| ______|");
+        printf("\n\n\n\n\n\t\t\tRETURNING TO MENU IN 5 SECONDS\n\n");
+        printf("\t\t\tTHANK YOU");
+        sleep(5);
+        system("cls");
+        menu();
+        break;
+    }
+    else if(paid>prc)
+    {
+        system("cls");
+        int ref;
+        ref=paid-prc;
+        printf("_______  _____  __   _  ______  ______ _______ _______ _     _        _______ _______ _____  _____  __   _ _______\n");
+        printf("|       |     | | \\  | |  ____ |_____/ |_____|    |    |     | |      |_____|    |      |   |     | | \\  | |______\n");
+        printf("|_____  |_____| |  \\_| |_____| |    \\_ |     |    |    |_____| |_____ |     |    |    __|__ |_____| |  \\_| ______|");
+        printf("\n\n\n\n\n\t\t\tREFUNDABLE AMOUNT: BDT%d",ref);
+        printf("\n\n\n\t\t\tRETURNING TO MENU IN 5 SECONDS\n\n");
+        printf("\t\t\tTHANK YOU");
+        sleep(5);
+        system("cls");
+        menu();
+        break;
+    }
+    else if(paid<prc&&i<2)
+    {
+        system("cls");
+        int need;
+        need=prc-paid;
+        printf("_______  _____   ______  ______ __   __\n");
+        printf("|______ |     | |_____/ |_____/   \\_/  \n");
+        printf("______| |_____| |    \\_ |    \\_    |     ");
+        printf("\n\n\n\n\n\t\t\tYOU NEED MORE: BDT%d",need);
+        printf("\n\n\n\t\t\tRETURNING TO PAYMENT IN 3 SECONDS");
+        sleep(3);
+        system("cls");
+        i++;
+    }
+    else if(paid<prc&&i<3)
+    {
+        system("cls");
+        printf("_______  _____   ______  ______ __   __\n");
+        printf("|______ |     | |_____/ |_____/   \\_/  \n");
+        printf("______| |_____| |    \\_ |    \\_    |     ");
+        printf("\n\n\n\n\n\t\t\tTOO MANY INVALID ATTEMPTS");
+        printf("\n\n\n\t\t\tRETURNING TO MENU IN 2 SECONDS");
+        sleep(2);
+        system("cls");
+        menu();
+        break;
+    }
+  }
 }
