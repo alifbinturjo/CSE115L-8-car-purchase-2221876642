@@ -22,6 +22,10 @@ void menu(void)
         system("cls");
         car_det();
         break;
+    case 2:
+        system("cls");
+        tax();
+        break;
     default:
         system("cls");
         menu();

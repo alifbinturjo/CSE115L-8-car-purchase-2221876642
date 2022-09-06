@@ -63,6 +63,7 @@ void mx5(int prc);
 void axela(int prc);
 void mazdalogo(void);
 void purchase(int prc);
+void tax(void);
 
 int main(void)
 {
@@ -2191,4 +2192,47 @@ system("cls");
         break;
     }
   }
+}
+void tax(void)
+{
+    printf("_______  _____  _     _  ______      ______ _____ __   _  ______     _______ _______  ______ _______\n");
+    printf("|______ |     | |     | |_____/     |_____/   |   | \\  | |  ____     |       |_____| |_____/ |______\n");
+    printf("|       |_____| |_____| |    \\_     |    \\_ __|__ |  \\_| |_____|     |_____  |     | |    \\_ ______|\n\n\n\n\n");
+
+    printf("\t\t\t __________________________________________________\n");
+    printf("\t\t\t|                            |                     |\n");
+    printf("\t\t\t|         CC(ENGINE)         |      GOVT. TAX      |\n");
+    printf("\t\t\t|____________________________|_____________________|\n");
+    printf("\t\t\t|                            |                     |\n");
+    printf("\t\t\t|           0-1000           |        91%%          |\n");
+    printf("\t\t\t|____________________________|_____________________|\n");
+    printf("\t\t\t|                            |                     |\n");
+    printf("\t\t\t|          1001-1500         |        130%%         |\n");
+    printf("\t\t\t|____________________________|_____________________|\n");
+    printf("\t\t\t|                            |                     |\n");
+    printf("\t\t\t|          1501-2000         |        215%%         |\n");
+    printf("\t\t\t|____________________________|_____________________|\n");
+    printf("\t\t\t|                            |                     |\n");
+    printf("\t\t\t|          2001-2750         |        370%%         |\n");
+    printf("\t\t\t|____________________________|_____________________|\n");
+    printf("\t\t\t|                            |                     |\n");
+    printf("\t\t\t|          2751-4000         |        602%%         |\n");
+    printf("\t\t\t|____________________________|_____________________|\n\n\n");
+
+    printf("\t\t\t[1]\tBACK\n\n\n");
+
+    int topt;
+    printf("\t\t\tENTER OPTION: ");
+    scanf("%d", &topt);
+
+    switch(topt)
+    {
+    case 1:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        tax();
+    }
 }
