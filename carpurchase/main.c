@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<string.h>
 #include<dos.h>
 #include"splash.h"
 #include"login.h"
@@ -64,12 +65,14 @@ void axela(int prc);
 void mazdalogo(void);
 void purchase(int prc);
 void tax(void);
+void message(void);
+void about(void);
 
 int main(void)
 {
+    system("color 70");
     splash();
     login();
-
 
     return 0;
 }
@@ -2235,4 +2238,74 @@ void tax(void)
         system("cls");
         tax();
     }
+}
+void message(void)
+{
+    printf("_______  _____  _     _  ______      ______ _____ __   _  ______     _______ _______  ______ _______\n");
+    printf("|______ |     | |     | |_____/     |_____/   |   | \\  | |  ____     |       |_____| |_____/ |______\n");
+    printf("|       |_____| |_____| |    \\_     |    \\_ __|__ |  \\_| |_____|     |_____  |     | |    \\_ ______|\n\n\n\n\n");
+
+    FILE *mes;
+    mes=fopen("message.txt","w");
+
+    typedef struct mess{char name[50]; int number; char message[1000]}mess;
+
+    mess m1;
+
+    printf("\t\t\tNAME: ");
+    getchar();
+    gets(m1.name);
+    printf("\n\t\t\tCONTACT NUMBER: +880");
+    scanf("%d", &m1.number);
+    printf("\n\t\t\tMESSAGE(1000 CHARACTERS): ");
+    getchar();
+    gets(m1.message);
+
+    fprintf(mes, "%s\n%d\n%s", m1.name,m1.number,m1.message);
+    fclose(mes);
+
+    printf("\n\n\n\t\t\tTHANK YOU. WE WILL RESPONSE AS SOON AS POSSIBLE...");
+    printf("\n\n\t\t\tRETURNING TO MENU IN 2 SECONDS");
+    sleep(2);
+    system("cls");
+    menu();
+}
+void about(void)
+{
+    printf("_______  _____  _     _  ______      ______ _____ __   _  ______     _______ _______  ______ _______\n");
+    printf("|______ |     | |     | |_____/     |_____/   |   | \\  | |  ____     |       |_____| |_____/ |______\n");
+    printf("|       |_____| |_____| |    \\_     |    \\_ __|__ |  \\_| |_____|     |_____  |     | |    \\_ ______|\n\n\n\n\n");
+
+    printf("\t\t\tFOUR RING CARS IS A BRAND NEW LUXURY CAR IMPORTING PLATFORM\n\n\n");
+
+    int aopt;
+    typedef struct abo{char own[50];int est;char acc[50];char loc[50]}abo;
+
+    abo a1;
+
+    FILE *ab;
+    ab=fopen("about.txt","r");
+    fscanf(ab,"%s%d%s%s",&a1.own,&a1.est,&a1.acc,&a1.loc);
+
+    printf("\t\t\tOWNER: %s\n\n", a1.own);
+    printf("\t\t\tESTD: %d\n\n", a1.est);
+    printf("\t\t\tACCREDITED BY: %s\n\n", a1.acc);
+    printf("\t\t\tLOCATION: %s\n\n\n", a1.loc);
+
+    printf("\t\t\t[1]\tBACK\n\n");
+    printf("\t\t\tENTER OPTION: ");
+    scanf("%d", &aopt);
+
+    switch(aopt)
+    {
+    case 1:
+        system("cls");
+        menu();
+        break;
+    default:
+        system("cls");
+        about();
+    }
+
+    fclose(ab);
 }

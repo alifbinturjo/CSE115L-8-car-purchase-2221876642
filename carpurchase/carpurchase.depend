@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1662504102 source:c:\users\user\documents\github\cse115l-8-car-purchase-2221876642\carpurchase\main.c
+1662569524 source:c:\users\user\documents\github\cse115l-8-car-purchase-2221876642\carpurchase\main.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 	<dos.h>
 	"splash.h"
 	"login.h"
@@ -16,6 +17,7 @@
 	<string.h>
 	<dos.h>
 
-1662503675 c:\users\user\documents\github\cse115l-8-car-purchase-2221876642\carpurchase\menu.h
+1662553554 c:\users\user\documents\github\cse115l-8-car-purchase-2221876642\carpurchase\menu.h
 	<stdio.h>
+	<string.h>
 
