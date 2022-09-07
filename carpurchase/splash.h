@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<dos.h>
 
-void splash(void)
+void splash(void)                  //splash screen ascii art
 {
 
 printf("                          .:^~!!7?JJYY55PPPGGGGGGGGGGGGPPPP55YYJJ??7!~~^:                          \n");
@@ -33,6 +33,6 @@ printf("_______  _____  _     _  ______      ______ _____ __   _  ______     ___
 printf("|______ |     | |     | |_____/     |_____/   |   | \\  | |  ____     |       |_____| |_____/ |______\n");
 printf("|       |_____| |_____| |    \\_     |    \\_ __|__ |  \\_| |_____|     |_____  |     | |    \\_ ______|");
 
-sleep(3);
+sleep(3);                            //hold screen
 system("cls");
 }

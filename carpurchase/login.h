@@ -16,7 +16,7 @@ void login(void)
     int i = 0;
     int j = 3;
 
-    while(i<3)
+    while(i<3)                                                   //loop for control excess attempts
     {
         printf("\t\t\tREMAINING LOGIN ATTEMPTS: %d\n\n\n", j--);
 
@@ -37,7 +37,7 @@ void login(void)
             sleep(2);
 
             system("cls");
-            menu();
+            menu();                         //go to menu after successful login
             break;
 
         }

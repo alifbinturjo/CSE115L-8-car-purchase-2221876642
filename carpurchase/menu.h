@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-void menu(void)
+void menu(void)                                     //print menu
 {
     printf("_______  _____  _     _  ______      ______ _____ __   _  ______     _______ _______  ______ _______\n");
     printf("|______ |     | |     | |_____/     |_____/   |   | \\  | |  ____     |       |_____| |_____/ |______\n");

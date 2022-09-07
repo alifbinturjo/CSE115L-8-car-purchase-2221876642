@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include<string.h>
 #include<dos.h>
-#include"splash.h"
+#include"splash.h"          //other header files declaration
 #include"login.h"
 #include"menu.h"
-void car_det(void);
-void downmenu(void);
-void audi(void);
-void a3(int prc);
+void car_det(void);          //car brands
+void downmenu(void);         //menu after specifications
+void audi(void);              // audi models
+void a3(int prc);            //audi cars functions
 void a4(int prc);
 void a5(int prc);
 void a6(int prc);
@@ -23,7 +23,7 @@ void q8(int prc);
 void r8(int prc);
 void audilogo(void);
 void bmw(void);
-void m2(int prc);
+void m2(int prc);             //bmw cars functions
 void m3(int prc);
 void m5(int prc);
 void x2(int prc);
@@ -34,7 +34,7 @@ void x6(int prc);
 void x7(int prc);
 void bmwlogo(void);
 void mbenz(void);
-void c180(int prc);
+void c180(int prc);             //mercedes cars functions
 void c200(int prc);
 void gls450(int prc);
 void gle450(int prc);
@@ -42,35 +42,35 @@ void cla180(int prc);
 void cls350(int prc);
 void mbenzlogo(void);
 void rr(void);
-void rrauto(int prc);
+void rrauto(int prc);           //range rover cars function
 void rrvelar(int prc);
 void rrevoque(int prc);
 void rrsport(int prc);
 void rrlogo(void);
 void honda(void);
-void civic10(int prc);
+void civic10(int prc);           //honda cars functions
 void civic11(int prc);
 void accord(int prc);
 void insight(int prc);
 void vezel(int prc);
 void hondalogo(void);
 void hyundai(void);
-void tucson(int prc);
+void tucson(int prc);            //hyundai cars functions
 void elantra(int prc);
 void sonata(int prc);
 void hyundailogo(void);
 void mazda(void);
-void mx5(int prc);
+void mx5(int prc);              //mazda cars functions
 void axela(int prc);
 void mazdalogo(void);
-void purchase(int prc);
-void tax(void);
-void message(void);
-void about(void);
+void purchase(int prc);          //purchase system
+void tax(void);                   //tax table
+void message(void);              //message system
+void about(void);               //about function
 
 int main(void)
 {
-    system("color 70");
+    system("color 70");            //color of the application
     splash();
     login();
 
@@ -91,7 +91,7 @@ void car_det(void)
     printf("\t\t\t[7]\tMAZDA\n\n");
     printf("\t\t\t[8]\tBACK TO MENU\n\n");
 
-    int opt1;
+    int opt1;                                  //for choosing option
 
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &opt1);
@@ -125,13 +125,13 @@ void car_det(void)
         break;
     default:
         system("cls");
-        car_det();
+        car_det();                 //return to the same page for invalid option
     }
 }
-void audi(void)
+void audi(void)                      //for audi
 {
     system("cls");
-audilogo();
+audilogo();                            //print audi logo
 
 printf("\t\t\t[1]\tAUDI A3\n\n");
 printf("\t\t\t[2]\tAUDI A4\n\n");
@@ -149,7 +149,7 @@ printf("\t\t\t[13]\tAUDI R8\n\n");
 printf("\t\t\t[14]\tBACK\n\n");
 printf("\t\t\t[15]\tBACK TO MENU\n\n");
 
-int audiopt,prc,optt;
+int audiopt,prc,optt;                 //prc passes price to function
 
 printf("\n\n\t\t\tENTER OPTION: ");
 scanf("%d", &audiopt);
@@ -159,8 +159,8 @@ switch(audiopt)
 case 1:
     system("cls");
     a3(prc);
-    o:
-        downmenu();
+    o:                                       //for goto statement
+        downmenu();                          //print down menu
     printf("\n\n\t\t\tENTER OPTION: ");
     scanf("%d", &optt);
     switch(optt)
@@ -520,7 +520,7 @@ default:
     audi();
 }
 }
-void a3(int prc)
+void a3(int prc)                //print car details
 {
     audilogo();
     prc=5000000;
@@ -700,7 +700,7 @@ void r8(int prc)
 
 }
 
-void audilogo(void)
+void audilogo(void)                     //audi logo
 {
 printf("      ^?PGBBGY!.  .^JPBBBGY!.  .~JPBBBGY~.  .~YGBBBPJ~.     \n");
 printf("   ^B@@#5?7?JG&@&B@&B5?7?YG&@##@&BY?7?YB&@##@&GY?7?5B@@#~   \n");
@@ -2085,7 +2085,7 @@ printf("  !@@@@^           ~7           ^@@@@!  \n");
 printf("   ~&@@@J.                    .J@@@&~   \n");
 printf("     ?&@@@G!:             .:7G@@@&?     \n");
 printf("       :?G&@@@&&#BBBBBB#&&@@@&G7:       \n");
-printf("           .:^!7JYY555YJ7~^.            \n");
+printf("           .:^!7JYY555YJ7~^.            \n\n\n");
 }
 void mx5(int prc)
 {
@@ -2113,7 +2113,7 @@ void axela(int prc)
     printf("\t\t\tPRICE: BDT%d\n\n\n",prc);
 
 }
-void downmenu(void)
+void downmenu(void)              //print menu after specs
 {
     printf("\t\t\t[1]\tPURCHASE\n\n");
     printf("\t\t\t[2]\tBACK\n\n");
@@ -2123,7 +2123,7 @@ void purchase(int prc)
 {
 system("cls");
     int i=0;
-    while(i<3)
+    while(i<3)                             //loop for control excess attempts
     {
     printf("_______  _____  _     _  ______      ______ _____ __   _  ______     _______ _______  ______ _______\n");
     printf("|______ |     | |     | |_____/     |_____/   |   | \\  | |  ____     |       |_____| |_____/ |______\n");
@@ -2134,7 +2134,7 @@ system("cls");
 
     int paid;
 
-    printf("\t\t\tAMOUNT TO BE PAID: BDT%d", prc);
+    printf("\t\t\tAMOUNT TO BE PAID: BDT%d", prc);          //get price from car menu
     printf("\n\n\n\t\t\tENTER PAYMENT: BDT");
     scanf("%d", &paid);
 
@@ -2155,7 +2155,7 @@ system("cls");
     {
         system("cls");
         int ref;
-        ref=paid-prc;
+        ref=paid-prc;                            //refund amount
         printf("_______  _____  __   _  ______  ______ _______ _______ _     _        _______ _______ _____  _____  __   _ _______\n");
         printf("|       |     | | \\  | |  ____ |_____/ |_____|    |    |     | |      |_____|    |      |   |     | | \\  | |______\n");
         printf("|_____  |_____| |  \\_| |_____| |    \\_ |     |    |    |_____| |_____ |     |    |    __|__ |_____| |  \\_| ______|");
@@ -2171,7 +2171,7 @@ system("cls");
     {
         system("cls");
         int need;
-        need=prc-paid;
+        need=prc-paid;                         //calculate needed money
         printf("_______  _____   ______  ______ __   __\n");
         printf("|______ |     | |_____/ |_____/   \\_/  \n");
         printf("______| |_____| |    \\_ |    \\_    |     ");
@@ -2191,7 +2191,7 @@ system("cls");
         printf("\n\n\n\t\t\tRETURNING TO MENU IN 2 SECONDS");
         sleep(2);
         system("cls");
-        menu();
+        menu();                     //back to main menu after excess attempts
         break;
     }
   }
@@ -2202,7 +2202,7 @@ void tax(void)
     printf("|______ |     | |     | |_____/     |_____/   |   | \\  | |  ____     |       |_____| |_____/ |______\n");
     printf("|       |_____| |_____| |    \\_     |    \\_ __|__ |  \\_| |_____|     |_____  |     | |    \\_ ______|\n\n\n\n\n");
 
-    printf("\t\t\t __________________________________________________\n");
+    printf("\t\t\t __________________________________________________\n");                  //tax of govt. for importing
     printf("\t\t\t|                            |                     |\n");
     printf("\t\t\t|         CC(ENGINE)         |      GOVT. TAX      |\n");
     printf("\t\t\t|____________________________|_____________________|\n");
@@ -2246,9 +2246,9 @@ void message(void)
     printf("|       |_____| |_____| |    \\_     |    \\_ __|__ |  \\_| |_____|     |_____  |     | |    \\_ ______|\n\n\n\n\n");
 
     FILE *mes;
-    mes=fopen("message.txt","w");
+    mes=fopen("message.txt","w");              //file for store message
 
-    typedef struct mess{char name[50]; int number; char message[1000]}mess;
+    typedef struct mess{char name[50]; int number; char message[1000]}mess;      //struct to use multiple type variable in one declaration
 
     mess m1;
 
@@ -2284,7 +2284,7 @@ void about(void)
     abo a1;
 
     FILE *ab;
-    ab=fopen("about.txt","r");
+    ab=fopen("about.txt","r");                                 //file for read about info
     fscanf(ab,"%s%d%s%s",&a1.own,&a1.est,&a1.acc,&a1.loc);
 
     printf("\t\t\tOWNER: %s\n\n", a1.own);
